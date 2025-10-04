@@ -1,0 +1,108 @@
+/* === RESET === */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f8fafc;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* === HEADER === */
+header {
+  background: #1e293b;
+  padding: 1rem 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+header h1 {
+  font-size: 2rem;
+  color: #38bdf8;
+  letter-spacing: 1px;
+  text-shadow: 0 0 8px rgba(56, 189, 248, 0.7);
+}
+
+/* === MAIN === */
+main {
+  flex: 1;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+/* === KPI CARDS === */
+.kpi-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.kpi {
+  background: #1e293b;
+  padding: 1.5rem;
+  border-radius: 12px;
+  min-width: 200px;
+  text-align: center;
+  flex: 1;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kpi:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.6);
+}
+
+.kpi h3 {
+  font-size: 1rem;
+  color: #94a3b8;
+  margin-bottom: 0.5rem;
+}
+
+.kpi p {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #f8fafc;
+}
+
+/* === CHART === */
+canvas {
+  background: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  max-width: 800px;
+  width: 100%;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.5);
+  animation: fadeIn 1s ease;
+}
+
+/* === FOOTER === */
+footer {
+  background: #1e293b;
+  padding: 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #94a3b8;
+  border-top: 1px solid #334155;
+}
+
+footer p {
+  margin: 0;
+}
+
+/* === ANIMATIONS === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
